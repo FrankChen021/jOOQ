@@ -316,8 +316,7 @@ public enum SQLDialect {
      */
     SQLITE("SQLite", false, true),
 
-
-
+    CLICKHOUSE("ClickHouse", false, true)
 
 
 

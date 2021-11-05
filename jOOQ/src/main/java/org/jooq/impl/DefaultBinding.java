@@ -51,6 +51,7 @@ import static java.time.temporal.ChronoField.YEAR;
 // ...
 // ...
 // ...
+import static org.jooq.SQLDialect.CLICKHOUSE;
 import static org.jooq.SQLDialect.CUBRID;
 // ...
 import static org.jooq.SQLDialect.DERBY;
@@ -3823,7 +3824,7 @@ public class DefaultBinding<T, U> implements Binding<T, U> {
          * Generated UID
          */
         private static final long            serialVersionUID         = 289387167549159015L;
-        private static final Set<SQLDialect> INLINE_AS_STRING_LITERAL = SQLDialect.supportedBy(SQLITE);
+        private static final Set<SQLDialect> INLINE_AS_STRING_LITERAL = SQLDialect.supportedBy(SQLITE, CLICKHOUSE);
 
         DefaultTimestampBinding(Converter<Timestamp, U> converter, boolean isLob) {
             super(converter, isLob);

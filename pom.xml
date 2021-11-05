@@ -12,7 +12,7 @@
 
     <groupId>org.jooq</groupId>
     <artifactId>jooq-parent</artifactId>
-    <version>3.13.6</version>
+    <version>3.13.7</version>
     <packaging>pom</packaging>
 
     <name>jOOQ Parent</name>
@@ -489,23 +489,23 @@
 
 
 
-        <module>jOOQ-checker</module>
+<!--        <module>jOOQ-checker</module>-->
 
-        <module>jOOQ-meta</module>
-        <module>jOOQ-meta-extensions</module>
-        <module>jOOQ-codegen</module>
-        <module>jOOQ-codegen-maven</module>
-        <module>jOOQ-scala_2.13</module>
-
-
+<!--        <module>jOOQ-meta</module>-->
+<!--        <module>jOOQ-meta-extensions</module>-->
+<!--        <module>jOOQ-codegen</module>-->
+<!--        <module>jOOQ-codegen-maven</module>-->
+<!--        <module>jOOQ-scala_2.13</module>-->
 
 
 
 
-        <module>jOOQ-xtend</module>
 
 
-        <module>jOOQ-refaster</module>
+<!--        <module>jOOQ-xtend</module>-->
+
+
+<!--        <module>jOOQ-refaster</module>-->
 
 
 
