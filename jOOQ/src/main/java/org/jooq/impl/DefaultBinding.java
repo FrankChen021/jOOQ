@@ -3879,7 +3879,7 @@ public class DefaultBinding<T, U> implements Binding<T, U> {
 
         @Override
         final void set0(BindingSetStatementContext<U> ctx, Timestamp value) throws SQLException {
-            if (ctx.family() == SQLITE)
+            if (ctx.family() == SQLITE || ctx.family() == CLICKHOUSE)
                 ctx.statement().setString(ctx.index(), value.toString());
             else
                 ctx.statement().setTimestamp(ctx.index(), value);
