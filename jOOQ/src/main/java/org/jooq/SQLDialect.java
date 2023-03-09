@@ -977,7 +977,7 @@ public enum SQLDialect {
 
                 case MYSQL:       return "MySQL";
                 case POSTGRES:    return "PostgreSQL";
-
+                case CLICKHOUSE:  return "ClickHouse";
                 default:          return null;
             }
         }
