@@ -455,6 +455,8 @@ public class JDBCUtils {
               || url.contains(":sqldroid:"))
             return SQLITE;
 
+        else if (url.contains(":clickhouse:"))
+            return CLICKHOUSE;
 
 
 

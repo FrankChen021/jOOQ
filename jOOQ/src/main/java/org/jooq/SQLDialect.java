@@ -482,7 +482,7 @@ public enum SQLDialect {
 
 
 
-
+    CLICKHOUSE("ClickHouse", false, true),
     // -------------------------------------------------------------------------
     // SQL dialects for commercial usage
     // -------------------------------------------------------------------------
@@ -1339,6 +1339,7 @@ public enum SQLDialect {
                 case MYSQL:       return "MySQL";
                 case POSTGRES:
                 case YUGABYTEDB:  return "PostgreSQL";
+                case CLICKHOUSE:  return "ClickHouse";
 
                 default:          return null;
             }

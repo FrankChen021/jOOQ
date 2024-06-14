@@ -56,6 +56,7 @@ import static org.jooq.Geometry.geometry;
 // ...
 // ...
 // ...
+import static org.jooq.SQLDialect.CLICKHOUSE;
 import static org.jooq.SQLDialect.CUBRID;
 // ...
 import static org.jooq.SQLDialect.DEFAULT;
@@ -1811,7 +1812,7 @@ public class DefaultBinding<T, U> implements Binding<T, U> {
     }
 
     static final class DefaultBooleanBinding<U> extends InternalBinding<Boolean, U> {
-        private static final Set<SQLDialect> BIND_AS_1_0        = SQLDialect.supportedBy(FIREBIRD, SQLITE);
+        private static final Set<SQLDialect> BIND_AS_1_0        = SQLDialect.supportedBy(FIREBIRD, SQLITE, CLICKHOUSE);
 
 
 
@@ -2258,7 +2259,7 @@ public class DefaultBinding<T, U> implements Binding<T, U> {
     }
 
     static final class DefaultDateBinding<U> extends InternalBinding<Date, U> {
-        private static final Set<SQLDialect> INLINE_AS_STRING_LITERAL = SQLDialect.supportedBy(SQLITE);
+        private static final Set<SQLDialect> INLINE_AS_STRING_LITERAL = SQLDialect.supportedBy(SQLITE, SQLDialect.CLICKHOUSE);
 
         DefaultDateBinding(DataType<Date> dataType, Converter<Date, U> converter) {
             super(dataType, converter);
@@ -2359,7 +2360,7 @@ public class DefaultBinding<T, U> implements Binding<T, U> {
 
         @Override
         final void set0(BindingSetStatementContext<U> ctx, Date value) throws SQLException {
-            if (ctx.family() == SQLITE)
+            if (ctx.family() == SQLITE || ctx.family() == CLICKHOUSE)
                 ctx.statement().setString(ctx.index(), value.toString());
 
 
