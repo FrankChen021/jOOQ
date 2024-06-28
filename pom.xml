@@ -35,7 +35,7 @@
         <io.r2dbc.version>0.9.1.RELEASE</io.r2dbc.version>
 
         <!-- From JDK 19 onwards, this is the required version of Xtend -->
-        <xtend.version>2.29.0</xtend.version>
+        <xtend.version>2.35.0</xtend.version>
 
         <!-- From JDK 11 onwards, we need to depend on the JAXB API explicitly -->
         <jaxb.version>3.0.0</jaxb.version>
@@ -260,11 +260,11 @@
                 <version>${kotlinx.coroutines.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.jooq</groupId>
-                <artifactId>jooq-scala_2.13</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.jooq</groupId>-->
+<!--                <artifactId>jooq-scala_2.13</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
 
 
 
@@ -367,30 +367,30 @@
                 <version>4.13.2</version>
                 <scope>test</scope>
             </dependency>
-            <dependency>
-                <groupId>org.scalatest</groupId>
-                <artifactId>scalatest_2.10</artifactId>
-                <version>3.0.8</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.scalatest</groupId>
-                <artifactId>scalatest_2.11</artifactId>
-                <version>3.0.8</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.scalatest</groupId>
-                <artifactId>scalatest_2.12</artifactId>
-                <version>3.0.8</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.scalatest</groupId>
-                <artifactId>scalatest_2.13</artifactId>
-                <version>3.0.8</version>
-                <scope>test</scope>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.scalatest</groupId>-->
+<!--                <artifactId>scalatest_2.10</artifactId>-->
+<!--                <version>3.0.8</version>-->
+<!--                <scope>test</scope>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.scalatest</groupId>-->
+<!--                <artifactId>scalatest_2.11</artifactId>-->
+<!--                <version>3.0.8</version>-->
+<!--                <scope>test</scope>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.scalatest</groupId>-->
+<!--                <artifactId>scalatest_2.12</artifactId>-->
+<!--                <version>3.0.8</version>-->
+<!--                <scope>test</scope>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.scalatest</groupId>-->
+<!--                <artifactId>scalatest_2.13</artifactId>-->
+<!--                <version>3.0.8</version>-->
+<!--                <scope>test</scope>-->
+<!--            </dependency>-->
 
             <!-- Some projects will need an H2 database for testing, or to create temporary in-memory databases -->
             <dependency>
@@ -715,17 +715,17 @@
                     <version>${spring.boot.version}</version>
                 </plugin>
 
-                <plugin>
-                    <groupId>net.alchim31.maven</groupId>
-                    <artifactId>scala-maven-plugin</artifactId>
-                    <version>4.4.1</version>
-                    <configuration>
-                        <args>
-                            <arg>-deprecation</arg>
-                            <arg>-feature</arg>
-                        </args>
-                    </configuration>
-                </plugin>
+<!--                <plugin>-->
+<!--                    <groupId>net.alchim31.maven</groupId>-->
+<!--                    <artifactId>scala-maven-plugin</artifactId>-->
+<!--                    <version>4.9.1</version>-->
+<!--                    <configuration>-->
+<!--                        <args>-->
+<!--                            <arg>-deprecation</arg>-->
+<!--                            <arg>-feature</arg>-->
+<!--                        </args>-->
+<!--                    </configuration>-->
+<!--                </plugin>-->
 
                 <plugin>
                     <artifactId>kotlin-maven-plugin</artifactId>
@@ -878,7 +878,7 @@
 
         <module>jOOQ-kotlin</module>
         <module>jOOQ-kotlin-coroutines</module>
-        <module>jOOQ-scala_2.13</module>
+<!--        <module>jOOQ-scala_2.13</module>-->
 
 
 
