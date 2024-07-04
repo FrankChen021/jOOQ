@@ -4623,7 +4623,7 @@ public class DefaultBinding<T, U> implements Binding<T, U> {
     }
 
     static final class DefaultTimestampBinding<U> extends InternalBinding<Timestamp, U> {
-        private static final Set<SQLDialect> INLINE_AS_STRING_LITERAL = SQLDialect.supportedBy(SQLITE);
+        private static final Set<SQLDialect> INLINE_AS_STRING_LITERAL = SQLDialect.supportedBy(SQLITE, CLICKHOUSE);
 
         DefaultTimestampBinding(DataType<Timestamp> dataType, Converter<Timestamp, U> converter) {
             super(dataType, converter);
