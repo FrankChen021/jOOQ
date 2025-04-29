@@ -96,7 +96,9 @@ implements
         switch (ctx.family()) {
 
 
-
+            case CLICKHOUSE:
+                ctx.visit(function(systemName("startsWith"), BOOLEAN, string, prefix));
+                break;
 
 
 
