@@ -730,7 +730,7 @@
                 <plugin>
                     <artifactId>kotlin-maven-plugin</artifactId>
                     <groupId>org.jetbrains.kotlin</groupId>
-                    <version>${kotlin.version}</version>
+                    <version>2.2.20</version>
 
                     <executions>
                         <execution>
